@@ -14,6 +14,8 @@
    <li>Go to Wazuh Dashboard -> Agents</li>
    <li>Add new agent</li>
   <li>Fill in information on Agent’s OS (Ubuntu in this case), Wazuh Server’s IP, and optionally agent’s name.</li>
+  <img alt="agentCreation1" src=https://github.com/daria-garmash/soc-automation-wazuh/blob/7dcaf49bc86eeb10a847db1c6b0835dbe4d3cdb6/Images/AgentCreation1.png>
+  <img alt="agentCreation2" src=https://github.com/daria-garmash/soc-automation-wazuh/blob/7dcaf49bc86eeb10a847db1c6b0835dbe4d3cdb6/Images/AgentCreation2.png >
   <li>Copy the generated string and execute it on the machine that you need to monitor.</li>
   <li>Make sure that the agent appears on Wazuh’s Dashboard.</li>
 </ol>
@@ -65,6 +67,7 @@ Follow the instructions here: https://wazuh.com/blog/hunting-for-linux-credentia
 <li>Log in as a non-root user</li>
   <li>Run commands: cat /etc/passwd and cat /etc/shadow</li>
   <li>Go back to Wazuh Dashboard (Threat Hunting) and make sure the alert appears. Should look similar to the following:</li>
+  <img alt="credentialsAccess" src=https://github.com/daria-garmash/soc-automation-wazuh/blob/7dcaf49bc86eeb10a847db1c6b0835dbe4d3cdb6/Images/CredentialAccessAlerts.png>
   <li>Check that the alerts also appear on TheHive</li>
 </ol>
 
@@ -78,11 +81,14 @@ Use the following manual: https://documentation.wazuh.com/current/user-manual/ca
   <p><code>use scanner/ssh/ssh_login</code></p>
   <p><code>options</code> </p>
   <li>Configure options. For this one we need to set up RHOSTS, PASS_FILE or PASSWORD, USERNAME or USER_FILE. Other options are optional. In the end we should have something like this:</li>
+  <img alt="metasploitOptions" src=https://github.com/daria-garmash/soc-automation-wazuh/blob/7dcaf49bc86eeb10a847db1c6b0835dbe4d3cdb6/Images/MetasploitOptions.png>
   <li>On the separate window run ping command to check connection to the monitored host. Should be the same as in RHOSTS from the previous step</li>
   <li>Back in the Metasploit window start the attack</li>
   <code>exploit</code>
   <li>Check the Wazuh dashboard. Alerts should look similar to the following:</li>
+  <img alt="activeResponseAlert" src=https://github.com/daria-garmash/soc-automation-wazuh/blob/7dcaf49bc86eeb10a847db1c6b0835dbe4d3cdb6/Images/ActiveResponseAlert.png>
   <li>Check TheHive Alerts Dashboard: </li>
+   <img alt="bruteForceAlert" src=https://github.com/daria-garmash/soc-automation-wazuh/blob/7dcaf49bc86eeb10a847db1c6b0835dbe4d3cdb6/Images/BruteForceAlertTheHive.png>
 </ol>
 
 
