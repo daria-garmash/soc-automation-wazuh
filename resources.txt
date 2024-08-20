@@ -1,0 +1,9 @@
+The whole project is inspired by MyDFIR’s SOC Automation Project (Home Lab): https://youtu.be/Lb_ukgtYK_U?si=SjTc5UsO77u1HL7C 
+
+Custom rules for detecting credential access: https://wazuh.com/blog/hunting-for-linux-credential-access-attacks-with-wazuh/
+
+Integration with TheHive: https://wazuh.com/blog/using-wazuh-and-thehive-for-threat-protection-and-incident-response/
+
+Rules classification: https://documentation.wazuh.com/current/user-manual/ruleset/rules/rules-classification.html
+
+Setting up active response: https://documentation.wazuh.com/current/user-manual/capabilities/active-response/ar-use-cases/blocking-ssh-brute-force.html
