@@ -54,13 +54,13 @@
     <p>Default login: admin@thehive.local </p>
     <p>Default password: secret</p>
 </ol>
-<h3>Integrate TheHive with Wazuh </h3>
+<h3>Step 5. Integrate TheHive with Wazuh </h3>
 Use the following blog post: https://wazuh.com/blog/using-wazuh-and-thehive-for-threat-protection-and-incident-response/
     
-<h3>Create a custom rule to detect access to /etc/shadow, /etc/passwd and bash history </h3>
+<h3>Step 6. Create a custom rule to detect access to /etc/shadow, /etc/passwd and bash history </h3>
 Follow the instructions here: https://wazuh.com/blog/hunting-for-linux-credential-access-attacks-with-wazuh/
 
-<h3>Access credentials files to test the custom rule</h3>
+<h3>Step 7. Access credentials files to test the custom rule</h3>
 <ol>
 <li>Log in as a non-root user</li>
   <li>Run commands: cat /etc/passwd and cat /etc/shadow</li>
@@ -68,10 +68,10 @@ Follow the instructions here: https://wazuh.com/blog/hunting-for-linux-credentia
   <li>Check that the alerts also appear on TheHive</li>
 </ol>
 
-<h3>Set up Active Response for SSH Brute Force alert </h3>
+<h3>Step 8. Set up Active Response for SSH Brute Force alert </h3>
 Use the following manual: https://documentation.wazuh.com/current/user-manual/capabilities/active-response/ar-use-cases/blocking-ssh-brute-force.html
 
-<h3>Test Active Response </h3>
+<h3>Step 9. Test Active Response </h3>
 <ol>
   <li>Use Metasploits module for SSH brute force </li>
   <p><code>msfconsole</code></p>
